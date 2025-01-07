@@ -281,7 +281,7 @@ view: +profit_and_loss {
     label: "Total Amount (Local Currency)"
     description: "Period Amount in Local Currency"
     sql: ${amount_in_local_currency} ;;
-    # value_format_name: millions_d1
+    # value_format_name: usd
   }
 
   measure: total_cumulative_amount_in_local_currency {
@@ -291,7 +291,7 @@ view: +profit_and_loss {
     description: "End of Period Cumulative Amount in Local Currency"
     sql: ${cumulative_amount_in_local_currency} ;;
     value_format_name: decimal_0
-    # value_format_name: millions_d1
+    # value_format_name: usd
   }
 
   measure: total_amount_in_global_currency {
@@ -300,7 +300,7 @@ view: +profit_and_loss {
     description: "Period Amount in Target or Global Currency"
     sql: ${amount_in_target_currency} ;;
     value_format_name: decimal_0
-    # value_format_name: millions_d1
+    # value_format_name: usd
   }
 
   measure: total_cumulative_amount_in_global_currency {
@@ -310,7 +310,7 @@ view: +profit_and_loss {
     description: "End of Period Cumulative Amount in Target or Global Currency"
     sql: ${cumulative_amount_in_target_currency} ;;
     value_format_name: decimal_0
-    # value_format_name: millions_d1
+    # value_format_name: usd
   }
 
   measure: net_income {
@@ -319,7 +319,7 @@ view: +profit_and_loss {
     label: "Total Net Income (Global Currency)"
     sql: ${amount_in_target_currency} ;;
     filters: [gllevel_number: "2"]
-    value_format_name: millions_d1
+    value_format_name: usd
   }
 
   measure: list_companies {
