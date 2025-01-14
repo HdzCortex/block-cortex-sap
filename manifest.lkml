@@ -9,12 +9,12 @@ constant: GCP_PROJECT {
 }
 
 constant: REPORTING_DATASET {
-  value: "REPORTING_S4"
+  value: "REPORTING"
   export: override_required
 }
 
 constant: CLIENT {
-  value: "100"
+  value: "110"
   export: override_required
 }
 
